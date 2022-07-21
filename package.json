@@ -1,11 +1,12 @@
 {
-  "name": "app",
+  "name": "microsoft-store-sync",
   "version": "1.0.0",
   "main": "src/index.ts",
   "private": true,
   "keywords": [],
   "scripts": {
     "build": "tsc",
+    "start": "node build/index.js",
     "dev": "ts-node src/index.ts"
   },
   "engines": {
@@ -13,9 +14,16 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.31",
+    "@types/yaml": "^1.9.7",
     "ts-node": "^10.7.0",
     "tsc": "^2.0.4",
     "typescript": "^4.6.4"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "libaria2-ts": "^1.0.91",
+    "sleep-promise": "^9.1.0",
+    "yaml": "^2.1.1"
+  }
 }
