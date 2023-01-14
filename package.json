@@ -1,7 +1,10 @@
 {
   "name": "microsoft-store-sync",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "bin": "build/index.js",
+  "files": [
+    "build"
+  ],
   "private": true,
   "keywords": [],
   "scripts": {
@@ -19,7 +22,7 @@
     "tsc": "^2.0.4",
     "typescript": "^4.6.4"
   },
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.3.1",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "libaria2-ts": "^1.0.91",

@@ -7,7 +7,7 @@ import * as path from 'path';
 import sleep from 'sleep-promise';
 
 (async () => {
-  const config = YAML.parse(await fsP.readFile('config.yaml', 'utf-8')) as Config;
+  const config = YAML.parse(await fsP.readFile(process.env.CONFIG || 'config.yaml', 'utf-8')) as Config;
   if (!config.downloaddir)
     config.downloaddir = config.basedir;
 
